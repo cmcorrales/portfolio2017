@@ -1,0 +1,48 @@
+body {
+  width: 100%;
+  font: 100%/1.6 'Lato';
+  background-color: #333;
+  color: #f7484e;
+}
+nav {
+  width: 100vh;
+  position: fixed;
+  top: 0;
+}
+#left {
+-webkit-transform-origin: left top;
+-webkit-transform:rotate(-90deg) translateX(-100%);
+left: 0;
+}
+#right {
+-webkit-transform-origin: right top;
+-webkit-transform:rotate(90deg) translateX(100%);
+right: 0;
+}
+li {
+  list-style: none;
+  font-size: 5 px;
+}
+li:hover {
+    text-decoration: underline;
+}
+.header, h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: white;
+}
+h1 {
+  font: 300% 'Bree Serif', serif;
+  color: white;
+}
+#contact {
+  display: flex;
+  justify-content: center;
+  align-self: flex-end;
+}
+span {
+  display: inline-block;
+  margin-right: 20px;
+}
