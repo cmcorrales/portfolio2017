@@ -1,76 +1,88 @@
-*{
-  display: flex;
-}
 html, body {
   height: 100%;
   align-items: stretch;
 }
+
 body {
   width: 100%;
   font-family: "Josefin Slab", serif;
   color: #f7484e;
-  background: url(flowers.jpg);
-  background-repeat: no-repeat;
-  background-size: 120%;
+  background: url(flowers.jpg) no-repeat;
+  background-size: cover;
 }
+
 .nav {
   width: 100vh;
   position: fixed;
-  background: linear-gradient(to top, #fef2fa 0%,#ffa9cb 100%);
+  background-color: white;
   color: #545353;
 }
+
 .left {
+  display: flex;
   -webkit-transform-origin: left top;
   -webkit-transform:rotate(-90deg) translateX(-100%);
-  left: 0;
   padding: 3%;
   justify-content: center;
 }
+
 .right {
+  display: flex;
   -webkit-transform-origin: right top;
   -webkit-transform:rotate(90deg) translateX(100%);
   right: 0;
-  padding: 2%;
+  padding: 3%;
   justify-content: center;
 }
+
 ul li {
   list-style: none;
   font-size: 130%
 }
+
 ul li:hover {
     text-decoration: underline;
 }
+
 .header {
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: white;
   height: 90%;
   width: 100%;
 }
+
 h1 {
   font-size: 350%;
   color: white;
 }
+
 .subheadings {
   font: 130%/1.6 'Open Sans Condensed', sans-serif;
-  color: #545353;
+  color: white;
 }
+
 .slash {
-  color: #f7484e;
+  color: #ffa9bb;
 }
+
 i {
   margin-right: 20px;
 }
+
 a{
   text-decoration:none;
   color:inherit;
 }
+
 .contact {
+  display: flex;
   justify-content: center;
   align-items: flex-end;
-  padding-right: 40%
+  color: white;
 }
+
 .fa:hover {
   color: #FFB6C1;
 }
