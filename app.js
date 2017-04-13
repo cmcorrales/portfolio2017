@@ -3,24 +3,32 @@ var leftNav = document.getElementById("nav-left");
 var rightNav = document.getElementById("nav-right");
 var slideoutLeft = document.querySelectorAll('#slideout-left');
 var slideoutRight = document.querySelectorAll('#slideout-right');
+var leftLink = document.getElementById('left-link');
+var rightLink = document.getElementById('right-link');
+var leftClose = document.getElementById('left-btn');
+var rightClose = document.getElementById('right-btn');
+
+
 var leftClose = document.getElementById('left-btn');
 
-navClick (leftNav, slideoutLeft);
-navClick (rightNav, slideoutRight);
+navClick (leftNav, slideoutLeft, leftLink);
+navClick (rightNav, slideoutRight, rightLink);
 
-function navClick (navElement, containerToDisplay) {
+function navClick (navElement, containerToDisplay, hideContainer) {
   navElement.onclick = function() {
     menuDisplay(containerToDisplay, 'block');
     navElement.style.width = '30%';
+    hideContainer.style.display = 'none';
   };
 }
 
-closeMenu(leftClose, slideoutLeft);
+closeMenu(leftClose, slideoutLeft, leftLink);
 
-function closeMenu (closeTriggers, closeContainer) {
+function closeMenu (closeTriggers, closeContainer, showContainer) {
   closeTriggers.onclick = function() {
     console.log("click");
     menuDisplay(closeContainer, 'none');
+    showContainer.style.display = 'flex';
     return false;
   }
 }
@@ -30,11 +38,8 @@ function menuDisplay (elements, specifiedDisplay) {
   for (var index = 0; index < elements.length; index++) {
     elements[index].style.display = specifiedDisplay;
     if(specifiedDisplay === 'none') {
-      elements[index].style.width = '0';
+      elements[index].style.display = 'none';
       elements[index].style.position = 'absolute';
-      elements[index].style.index = '-2';
-
-
     }
   }
 }

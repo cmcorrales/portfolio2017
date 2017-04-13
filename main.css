@@ -26,7 +26,7 @@ body {
 }
 
 #slideout-left {
-  width: 69%;
+  width: 92%;
   height: 100%;
   z-index: 1;
   background-color: black;
@@ -38,7 +38,7 @@ body {
 }
 
 #slideout-right {
-  width: 69%;
+  width: 92%;
   height: 100%;
   z-index: 1;
   background-color: black;
@@ -73,7 +73,7 @@ body {
   box-shadow: .1px .001px 20px #545353;
 }
 
-.left {
+#left-link {
   display: flex;
   -webkit-transform-origin: left top;
   -webkit-transform: rotate(-90deg) translateX(-100%);
@@ -81,7 +81,7 @@ body {
   justify-content: center;
 }
 
-.right {
+#right-link {
   display: flex;
   -webkit-transform-origin: right top;
   -webkit-transform: rotate(90deg) translateX(100%);
