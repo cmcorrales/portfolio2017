@@ -3,27 +3,40 @@
 <head>
   <meta charset='utf-8'>
   <meta name="description" content="Cassandra Corrales's Portfolio">
-  <link type="text/css" rel="stylesheet" href="normalize.css" />
+  <link type="text/css" rel="stylesheet" href="reset.css" />
   <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Fredericka+the+Great|Open+Sans+Condensed:300" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="main.css">
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  <title>cassandra corrales</title>
+  <title>Cassandra Corrales</title>
 </head>
 <body>
 
-  <div class="nav left">
+<div id="nav-left">
+  <div class="nav" id="left-link">
     <ul>
-      <li><a href="">about</a></li>
+      <li><a href="#">about</a></li>
     </ul>
   </div>
+    <div id="slideout-left">
+      <a href="#" class="closebtn" id="left-btn">&times;</a>
+        <h1>insert text here</h1>
+    </div>
+</div>
 
-  <div class="nav right">
+<div id="nav-right">
+  <div class="nav" id="right-link">
     <ul>
-      <li><a href="">projects</a></li>
+      <li><a href="#">projects</a></li>
     </ul>
   </div>
+  <div id="slideout-right">
+      <a href="#" class="closebtn" id="right-btn">&times;</a>
+      <h1 class="nav-right-text">projects</h1>
+  </div>
+</div>
 
+  <div class="main-content">
   <div class="header">
     <h1>cassandra corrales</h1>
     <div class="subheadings">
@@ -40,8 +53,10 @@
     <a href="https://www.linkedin.com/in/cassandra-corrales-0064a3115/" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
     <a href="https://twitter.com/casita305" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
   </div>
+</div>
 
   <script src="https://use.fontawesome.com/bd2cd0aba2.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script type="text/javascript" src="app.js"></script>
 </body>
 </html>
